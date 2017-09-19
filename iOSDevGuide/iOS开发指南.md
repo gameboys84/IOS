@@ -22,4 +22,9 @@ Chapter4  UIView与视图
       self.window.rootViewController = [[RootViewController alloc] init];
       
       [self.window makeKeyAndVisible];
+
+  1-4: 控件Label、UIButton、Switch、Segment、Slider
+
+      // 消息响应
+      - (IBAction)onValueChanged:(id)sender;
   

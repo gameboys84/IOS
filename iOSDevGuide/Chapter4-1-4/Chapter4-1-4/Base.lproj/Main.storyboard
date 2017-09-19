@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbY-xJ-2Nn">
+                                <rect key="frame" x="300" y="330" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="48z-No-GX2"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开关状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-0m-8YJ">
+                                <rect key="frame" x="26" y="335" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j8M-wQ-677">
+                                <rect key="frame" x="26" y="428" width="323" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="cse-cg-DN9"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分段开关" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yD-g1-EUI">
+                                <rect key="frame" x="26" y="384" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Cui-Hd-tal">
+                                <rect key="frame" x="24" y="519" width="327" height="31"/>
+                                <color key="backgroundColor" red="0.9720642164430584" green="1" blue="0.76809688656857966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" red="1" green="0.28232967844289991" blue="0.24469982026092463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vyc-1f-Rgv"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider进度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkp-xq-jsh">
+                                <rect key="frame" x="26" y="483" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="zbY-xJ-2Nn" secondAttribute="trailing" constant="10" id="0Ua-mG-TI6"/>
+                            <constraint firstItem="Cui-Hd-tal" firstAttribute="top" secondItem="fkp-xq-jsh" secondAttribute="bottom" constant="15" id="0YT-ax-d9E"/>
+                            <constraint firstItem="fkp-xq-jsh" firstAttribute="leading" secondItem="j8M-wQ-677" secondAttribute="leading" id="1y7-hA-fIV"/>
+                            <constraint firstItem="3yD-g1-EUI" firstAttribute="top" secondItem="Fhe-0m-8YJ" secondAttribute="bottom" constant="28" id="240-yX-oV9"/>
+                            <constraint firstItem="j8M-wQ-677" firstAttribute="leading" secondItem="3yD-g1-EUI" secondAttribute="leading" id="Eje-ZV-SHu"/>
+                            <constraint firstItem="Fhe-0m-8YJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="315" id="JlY-rv-wSj"/>
+                            <constraint firstItem="Fhe-0m-8YJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ZSv-km-mKx"/>
+                            <constraint firstItem="Cui-Hd-tal" firstAttribute="trailing" secondItem="j8M-wQ-677" secondAttribute="trailing" id="aa7-XB-IJi"/>
+                            <constraint firstItem="3yD-g1-EUI" firstAttribute="leading" secondItem="Fhe-0m-8YJ" secondAttribute="leading" id="cd0-pj-eCd"/>
+                            <constraint firstItem="j8M-wQ-677" firstAttribute="trailing" secondItem="zbY-xJ-2Nn" secondAttribute="trailing" id="cvB-bZ-cGh"/>
+                            <constraint firstItem="zbY-xJ-2Nn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="310" id="fS4-x9-nw7"/>
+                            <constraint firstItem="j8M-wQ-677" firstAttribute="top" secondItem="3yD-g1-EUI" secondAttribute="bottom" constant="23" id="rw6-JQ-457"/>
+                            <constraint firstItem="Cui-Hd-tal" firstAttribute="leading" secondItem="fkp-xq-jsh" secondAttribute="leading" id="vBO-wA-KTt"/>
+                            <constraint firstItem="fkp-xq-jsh" firstAttribute="top" secondItem="j8M-wQ-677" secondAttribute="bottom" constant="27" id="zQX-gO-nQN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Switch" destination="zbY-xJ-2Nn" id="T23-IX-K7g"/>
+                        <outlet property="lblSegment" destination="3yD-g1-EUI" id="wIi-NO-zFn"/>
+                        <outlet property="lblSlider" destination="fkp-xq-jsh" id="NpR-YT-5zK"/>
+                        <outlet property="lblSwitch" destination="Fhe-0m-8YJ" id="kmL-gR-TBK"/>
+                        <outlet property="segment" destination="j8M-wQ-677" id="AV7-FE-gfe"/>
+                        <outlet property="slider" destination="Cui-Hd-tal" id="s5f-Er-1hV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
