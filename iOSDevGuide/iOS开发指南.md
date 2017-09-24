@@ -28,4 +28,27 @@ Chapter4  UIView与视图
 
       // 消息响应
       - (IBAction)onValueChanged:(id)sender;
+      
+  1-5:
+  
+  1-6: UIWebView的替换控件： WKWebView
+      
+      1.使用3种页面加载方法;
+          -loadFileURL:allowingReadAccessToURL:
+          Navigates to the requested file URL on the filesystem
+          
+          -loadData:MIMEType:characterEncodingName:baseURL:
+          Sets the webpage contents and base URL.
+          
+          -loadRequest:
+          Navigates to a requested URL.
+          
+      2.将自定义资源打包到Bundle中，然后加载;
+          NSBundle *main = [NSBundle mainBundle];
+          NSString *resourcePath = [main pathForResource:@"main" ofType:@"html"];
+          
+      3.iOS9引入新特性ATS（App Transport Security），即要求应用程序访问网络资源必须使用HTTPS协议，如何关闭特性，使用HTTP协议。
+          修改Info.plist
+          添加App Transport Security Settings键，Add Row，添加Allow Arbitrary Load键，值为YES。
+  
   

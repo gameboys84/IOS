@@ -1,0 +1,687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>那些不能错过的Xcode插件 -  CocoaChina 苹果开发中文站 - 最热的iPhone开发社区 最热的苹果开发社区 最热的iPad开发社区</title>
+	<meta name="keywords" content="XCodeiPhone开发,iOS开发,iPad开发,Mac开发,苹果开发中文站,iPhone开发中文站,CocoaChina首页, Mac OS开发, Cocoa介绍,移动互联网,触控科技,Cocoa,Apple,developer,iOS,iPhone,iPad,iMac,iPod Touch,iPhone5,iPhone4S,iPad3,招聘,iPhone程序员,Objective-c,iPhone应用外包,ios6,ios面试,Cocos2d-x,cocos2d,iTunes,App Store,苹果开发" />
+	<meta name="description" content="古人云“工欲善其事必先利其器”，打造一个强大的开发环境，是立即提升自身战斗力的绝佳途径！以下是搜集的一些有力的XCode插件。 - CocoaChina 开发讨论区 最热的iOS开发论坛| 最热的Mac开发论坛 | 最热的iPhone开发论坛 | 最热的iPad开发论坛" />
+    <meta name="baidu-tc-cerfication" content="3300a939a1098c27e94457b75a0bb8c1" />
+   	<link href="/cms/templets/style_new/style-min.css?t=20140307001" rel="stylesheet" type="text/css" />
+	<script src="/cms/templets/js_new/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - CocoaChina全站" href="/cms/rss.php" />
+	<script language="javascript" type="text/javascript" src="/cms/include/dedeajax2-min.js"></script>
+	<script type='text/javascript' src='http://js.adm.cnzz.net/js/abase.js'></script>
+</head>
+<body class="narrow">
+<div class="top">
+	<div id="topshow" class="t-wrap"></div>
+</div>
+
+<div class="header">
+	<div class="h-wrap">
+    	<div class="h-logo">
+        	<a href="/" class="logo"></a>
+            
+            <div class="cc-ad1" style="padding-top:10px;padding-right:5px;">
+            	<script>CNZZ_SLOT_RENDER('294790');</script>
+            </div>
+        </div>
+        
+        <div class="h-nav">
+        	<div class="h-navr">
+            	<div class="h-navl">
+                	<ul id="nav-lv0" class="hn-lv1 clearfix">
+                    	<li class="first"><a data-lv='1-1' href="/" class="cur">首页</a></li>
+                        <li><a data-lv='1-2' href="/newbie/">新手</a></li>
+                        <li><a data-lv='1-3' href="/ask" target="_blank">问答</a></li>
+                        <li><a data-lv='1-4' href="/bbs" target="_blank">论坛</a></li>
+                        <li><a data-lv='1-5' href="/bbs/thread.php?fid=41" target="_blank">Cocos2d-x</a></li>
+                        <li><a data-lv='1-6' href="http://d.cocoachina.com" target="_blank">开发者中心</a></li>
+                    </ul>
+                    <div id="nav-box0" class="hn-lv2">
+                    	<ul class="ul1 clearfix" style="display:block">
+                            <li><a data-lv='1-1-8' href="/special/index.html" target="_blank"><span>专题</span></a></li>
+                           
+                            <li><a data-lv='1-1-10' href="http://www.cocoachina.com/calendar/" target="_blank"><span>新闻日历</span></a></li>
+                        </ul>
+                        <ul class="ul1 clearfix">
+                        	<li><a data-lv='1-1-1' href="/ios/" target="_blank"><span>iOS开发</span></a></li>
+                            <li><a data-lv='1-1-2' href="/game/"><span>游戏开发</span></a></li>
+                            <li><a data-lv='1-1-3' href="/swift/"><span>Swift</span></a></li>
+                            <li><a data-lv='1-1-4' href="/apple/"><span>苹果相关</span></a></li>
+                            <li><a data-lv='1-1-5' href="/appstore/"><span>App Store研究</span></a></li>
+                            <li><a data-lv='1-1-6' href="/cocos/"><span>Cocos引擎</span></a></li>
+                            <li><a data-lv='1-1-7' href="/market/"><span>营销推广</span></a></li>
+                            <li><a data-lv='1-1-8' href="/industry/" target="_blank"><span>业界动态</span></a></li>
+                        </ul>
+                        <ul class="ul1 clearfix">
+                        	<li><a data-lv='1-3-1' href="/ask/questions" target="_blank"><span>最新问题</span></a></li>
+                            <li><a data-lv='1-3-2' href="/ask/questions/index/all?tab=hot" target="_blank"><span>热门问题</span></a></li>
+                            <li><a data-lv='1-3-3' href="/ask/users" target="_blank"><span>用户</span></a></li>
+                            <li><a data-lv='1-3-4' href="/ask/questions/index/unanswered" target="_blank"><span>未解答提问</span></a></li>
+                            <li><a data-lv='1-3-5' href="/ask/questions/ask" target="_blank"><span>我要提问</span></a></li>
+                        </ul>
+                        <ul class="ul1 clearfix">
+                        	<li><a data-lv='1-4-1' href="/bbs/thread.php?fid-2.html"><span>OS X开发</span></a></li>
+							<li><a data-lv='1-4-1' href="/bbs/thread.php?fid-57.html"><span>Swift专区</span></a></li>
+                            <li><a data-lv='1-4-2' href="/bbs/thread.php?fid-21.html"><span>iOS开发</span></a></li>
+                            <li><a data-lv='1-4-3' href="/bbs/thread.php?fid-14.html"><span>App Store经验交流</span></a></li>
+                            <li><a data-lv='1-4-4' href="/bbs/thread.php?fid-23.html"><span>美术区</span></a></li>
+                            <li><a data-lv='1-4-5' href="/bbs/thread.php?fid=18"><span>游戏开发区</span></a></li>
+                            <li><a data-lv='1-4-6' href="/bbs/thread.php?fid-5.html"><span>议事大厅</span></a></li>
+                            <li><a data-lv='1-4-7' href="/bbs/thread.php?fid-26.html"><span>招聘外包区</span></a></li>
+                        </ul>
+						<ul class="ul1 clearfix">
+							<li></li>
+                        </ul>
+                        <ul class="ul1 clearfix">
+                        	<li><a data-lv='1-6-1' href="http://code.cocoachina.com/" target="_blank"><span>代码库</span></a></li>
+                            <li><a data-lv='1-6-2' href="http://d.cocoachina.com/job/job_list/" target="_blank"><span>招聘</span></a></li>
+                            <li><a data-lv='1-6-3' href="http://d.cocoachina.com/task/lists/" target="_blank"><span>外包</span></a></li>
+                            <li><a data-lv='1-6-4' href="http://d.cocoachina.com/brand/" target="_blank"><span>App Store应用排行</span></a></li>
+                            <li><a data-lv='1-6-5' href="http://d.cocoachina.com/promocode/" target="_blank"><span>发码</span></a></li>
+                            <li><a data-lv='1-6-6' href="http://d.cocoachina.com/signature/" target="_blank"><span>签名</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="search" style="">
+                    	<form id="searchform" action="/cms/plus/search.php" name="formsearch" method="post" target="_blank">
+                            <input type="hidden" name="kwtype" value="0" />
+    						<input type="hidden" name="searchtype" value="titlekeyword" />
+                            <input name="keyword"  type="text" value="站内搜索" style="width:190px;padding:5px;height:26px" onClick="this.select()"/><input type="image" src="/cms/templets/img_new/searchbtn.png" data-lv='1-7' /></font>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="middle" style="" >
+	<div class="m-wrap">
+<script language="javascript">
+    function IsPC() { 
+		var userAgentInfo = navigator.userAgent; 
+		var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPod"); 
+		var flag = true; 
+		for (var v = 0; v < Agents.length; v++) { 
+		if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; } 
+		} 
+		return flag; 
+	}
+    if (!IsPC()){
+           window.location.href = "http://www.cocoachina.com/cms/wap.php?action=article&id=7022"; 
+    }
+</script>
+        <div class="m-cols clearfix">
+        	<div class="m-rcol fr">
+            	<div class="mr-fast">
+                	<h2>开发者通道</h2>
+                    <ul class="clearfix">
+                    	<li><a href="http://brand.cocoachina.com" target="_blank"><span class="rf1">排行榜</span></a></li>
+                        <li><a href="http://d.cocoachina.com/code/" target="_blank"><span class="rf2">代码库</span></a></li>
+                        <li class="rlast"><a href="http://d.cocoachina.com/books/" target="_blank"><span class="rf3">图书库</span></a></li>
+                        <li><a href="http://d.cocoachina.com/sites/" target="_blank"><span class="rf4">网站库</span></a></li>
+                        <li><a href="http://d.cocoachina.com/promocode/" target="_blank"><span class="rf5">发码区</span></a></li>
+                        <li class="rlast"><a href="http://d.cocoachina.com/tools/" target="_blank"><span class="rf6">工具库</span></a></li>
+                        <li><a href="http://d.cocoachina.com/job" target="_blank"><span class="rf7">招聘区</span></a></li>
+                        <li><a href="http://d.cocoachina.com/task/lists" target="_blank"><span class="rf8">外包区</span></a></li>
+                        <li class="rlast"><a href="http://ask.cocoachina.com" target="_blank"><span class="rf9">问答区</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="mr-ads">
+                	<h2>关注CocoaChina</h2>
+                    <div class="clearfix mr-cont">
+                    	<p class="fl">
+                        	<img src="/cms/templets/img_new/cocoachina-weixin-100.jpg" width="100" height="100" alt="关注CocoaChina微信 获取每日文章推荐" /><br />
+                            关注微信
+                        </p>
+                        <p class="fl">
+                        	<img src="/cms/templets/img_new/cocoachina-mobile-100.jpg" width="100" height="100" alt="扫一扫 浏览CocoaChina移动版" /><br />
+                            移动版
+                        </p>
+                    </div>
+              	</div>
+                <div class="mr-ads-btm"></div>
+                
+                <div class="mr-rpo">
+                	<ul class="mrpo-nav clearfix">
+                    	<li class="first cur"><a>最近更新</a></li>
+                        <li class="last cur"><div></div></li>
+                    </ul>
+                    <div class="mrpo-list">
+                    	<ul>
+                        	<li class="first">
+                            	<div class="col1">1</div>
+                            	<div>
+                                	<a href="/industry/20140826/9458.html" class="mrpol-ttl" title="苹果要求开发者使用最新的iOS 8和OS X Yosemite测试版开发集成云端服务的应用">苹果要求开发者使用最新的iOS 8和OS X Yosemite测试版开发集成云端服务的应用</a>
+                          			<p>2014-08-26</p>
+                               	</div>
+                            </li>
+<li>
+                            	<div class="col1">2</div>
+                            	<div>
+                                	<a href="/industry/20140826/9455.html" class="mrpol-ttl" title="论坛源码推荐（8.26）:iOS 8 Today 视图扩展（插件）,系统字体样式列表">论坛源码推荐（8.26）:iOS 8 Today 视图扩展（插件）,系统字体样式列表</a>
+                          			<p>2014-08-26</p>
+                               	</div>
+                            </li>
+<li>
+                            	<div class="col1">3</div>
+                            	<div>
+                                	<a href="/industry/20140826/9454.html" class="mrpol-ttl" title=" OCaml 发布 iOS 7 版编译器（OCamlXARM 4.0.2）"> OCaml 发布 iOS 7 版编译器（OCamlXARM 4.0.2）</a>
+                          			<p>2014-08-26</p>
+                               	</div>
+                            </li>
+<li>
+                            	<div class="col1">4</div>
+                            	<div>
+                                	<a href="/industry/20140825/9450.html" class="mrpol-ttl" title="iOS 8自动调整UITableView和UICollectionView布局">iOS 8自动调整UITableView和UICollectionView布局</a>
+                          			<p>2014-08-25</p>
+                               	</div>
+                            </li>
+<li>
+                            	<div class="col1">5</div>
+                            	<div>
+                                	<a href="/industry/20140825/9446.html" class="mrpol-ttl" title="论坛源码推荐（8.25）:Chisel辅助iOS 应用程序调试,MusicApp模仿酷狗4.0 UI框架">论坛源码推荐（8.25）:Chisel辅助iOS 应用程序调试,MusicApp模仿酷狗4.0 UI框架</a>
+                          			<p>2014-08-25</p>
+                               	</div>
+                            </li>
+<li>
+                            	<div class="col1">6</div>
+                            	<div>
+                                	<a href="/industry/20140822/9437.html" class="mrpol-ttl" title="UI 测试">UI 测试</a>
+                          			<p>2014-08-22</p>
+                               	</div>
+                            </li>
+<li>
+                            	<div class="col1">7</div>
+                            	<div>
+                                	<a href="/industry/20140821/9429.html" class="mrpol-ttl" title="论坛源码推荐（8月21日）：浏览ZIP文件的iOS 8 Action扩展,类似Vine/Instagram的相机">论坛源码推荐（8月21日）：浏览ZIP文件的iOS 8 Action扩展,类似Vine/Instagram的相机</a>
+                          			<p>2014-08-21</p>
+                               	</div>
+                            </li>
+<li>
+                            	<div class="col1">8</div>
+                            	<div>
+                                	<a href="/industry/20140820/9423.html" class="mrpol-ttl" title="对访问控制与protected的理解">对访问控制与protected的理解</a>
+                          			<p>2014-08-20</p>
+                               	</div>
+                            </li>
+<li>
+                            	<div class="col1">9</div>
+                            	<div>
+                                	<a href="/industry/20140818/9407.html" class="mrpol-ttl" title="IAP最佳实践">IAP最佳实践</a>
+                          			<p>2014-08-18</p>
+                               	</div>
+                            </li>
+<li class="last">
+                            	<div class="col1">10</div>
+                            	<div>
+                                	<a href="/industry/20140818/9406.html" class="mrpol-ttl" title="论坛源码推荐（8月18日）：VimR 改善Vim的整体用户体验,功能丰富的iOS action 页面">论坛源码推荐（8月18日）：VimR 改善Vim的整体用户体验,功能丰富的iOS action 页面</a>
+                          			<p>2014-08-18</p>
+                               	</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="mrpo-btm"></div>
+                </div>
+                
+                
+                <div class="mr-app mr-cca">
+                	<div class="mr-app2">
+                    	<div class="mr-app3">
+                        	<ul id="nav-lv1" class="mra-nav clearfix">
+                            	<li class="first cur"><a>推荐内容</a></li>
+                                <li class="last"><a>热点内容</a></li>
+                            </ul>
+                            <div id="nav-lv2" class="mra-list mra-list1">
+                            	<ul style="display:block">
+                                	<li class="first">
+                                    	<a href="/industry/20140815/9389.html" class="col4"><img src="/cms/uploads/allimg/140815/4196-140Q5100G20-L.jpg" alt="Testing with Xcode文档(中文版)" /></a>
+                                        <a href="/industry/20140815/9389.html" class="col5">Testing with Xcode文档(中文版)</a>
+                                    </li>
+<li>
+                                    	<a href="/industry/20140811/9351.html" class="col4"><img src="/cms/uploads/140811/4196-140Q1102612M3.png" alt="SpriteKit 在iOS8和 OSX10.10 中的新特性" /></a>
+                                        <a href="/industry/20140811/9351.html" class="col5">SpriteKit 在iOS8和 OSX10.10 中的新特性</a>
+                                    </li>
+<li>
+                                    	<a href="/industry/20140804/9307.html" class="col4"><img src="/cms/uploads/allimg/140804/4196-140P41I5590-L.png" alt="功能强大的Xcode辅助工具Faux Pas：帮你找到各种隐形的bug" /></a>
+                                        <a href="/industry/20140804/9307.html" class="col5">功能强大的Xcode辅助工具Faux Pas：帮你找到各种隐形的bug</a>
+                                    </li>
+<li>
+                                    	<a href="/industry/20140728/9259.html" class="col4"><img src="/cms/uploads/allimg/140728/4196-140HQ141560-L.png" alt="Flipboard开源应用内调试工具FLEX" /></a>
+                                        <a href="/industry/20140728/9259.html" class="col5">Flipboard开源应用内调试工具FLEX</a>
+                                    </li>
+<li class="last">
+                                    	<a href="/industry/20140721/9204.html" class="col4"><img src="/cms/uploads/allimg/140721/4196-140H11553210-L.png" alt="iTerm2 2.0版本已发布,添加大量新功能,更易于使用" /></a>
+                                        <a href="/industry/20140721/9204.html" class="col5">iTerm2 2.0版本已发布,添加大量新功能,更易于使用</a>
+                                    </li>
+
+                                </ul>
+                                
+                                <ul style="display:none">
+                                	<li class="first">
+                                    	<a href="/industry/20130709/6560.html" class="col4"><img src="/cms/uploads/allimg/130709/4673-130F9110U90-L.jpg" alt="2013年iOS开发者薪资调查报告" /></a>
+                                        <a href="/industry/20130709/6560.html" class="col5">2013年iOS开发者薪资调查报告</a>
+                                    </li>
+<li>
+                                    	<a href="/industry/20130918/7022.html" class="col4"><img src="/cms/uploads/allimg/130918/4196-13091QH2360-L.jpg" alt="那些不能错过的Xcode插件" /></a>
+                                        <a href="/industry/20130918/7022.html" class="col5">那些不能错过的Xcode插件</a>
+                                    </li>
+<li>
+                                    	<a href="/industry/20131213/7537.html" class="col4"><img src="/cms/uploads/allimg/131213/4196-1312131F5140-L.jpg" alt="在iOS 7中使用storyboard（part 1）" /></a>
+                                        <a href="/industry/20131213/7537.html" class="col5">在iOS 7中使用storyboard（part 1）</a>
+                                    </li>
+<li>
+                                    	<a href="/industry/20140224/7868.html" class="col4"><img src="/cms/uploads/140224/4196-140224112044E5.gif" alt="iOS 7最佳实践：一个天气App案例" /></a>
+                                        <a href="/industry/20140224/7868.html" class="col5">iOS 7最佳实践：一个天气App案例</a>
+                                    </li>
+<li class="last">
+                                    	<a href="/industry/20130628/6502.html" class="col4"><img src="/cms/uploads/allimg/130628/4196-13062Q556180-L.jpg" alt="iOS 7人机交互指南译文汇总" /></a>
+                                        <a href="/industry/20130628/6502.html" class="col5">iOS 7人机交互指南译文汇总</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> <!--right column-->
+        
+        
+        	<div class="mlist">
+            	<div class="cornertm">
+                	<div class="cornertl">
+                    	<div class="cornertr" id="channelinfos">
+                        	<a href='http://www.cocoachina.com/'>主页</a><span> > </span><a href='/industry/'>业界动态</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+ 
+                	
+                	<h2 class="arcd-ttl">那些不能错过的Xcode插件</h2>
+		
+                    <p class="arcd-info"><span>发布于：2013-09-18 17:22</span><span>阅读数：<script src="/cms/plus/count.php?view=no&aid=7022&mid=4196" type='text/javascript' language="javascript"></script></span>          	
+					</p>
+                    <div class="arcd-sum">
+                    	<p class="p1">古人云“工欲善其事必先利其器”，打造一个强大的开发环境，是立即提升自身战斗力的绝佳途径！以下是搜集的一些有力的XCode插件。</p>
+                        
+                        <span class="pun pun1">“</span><span class="pun pun2">”</span>
+                    </div>
+                </div>
+            	<div class="cornerbm c10"><div class="cornerbl c11"><div class="cornerbr c12"></div></div></div>
+            
+            	<div class="detail">
+            		<div class="tags">
+                    	<a href="javascript:void(0)" onclick="ts('article',1)" class="font f1"></a>
+                    	<a href="javascript:void(0)" onclick="ts('article',-1)" class="font f2"></a>
+                    	<a id="read" href="javascript:void(0);" class="font f3">阅读器</a>
+                        
+                    	<p style="min-height:35px"><a href="/cms/tags.php?/XCode/" target="_blank">XCode</a></p>
+
+                    </div>
+                    
+                    <div class="dtl-arc">
+                    	<div class="dtl-txt">
+                    		<div id="article">
+							
+							<div>整理自<span style="color: rgb(0, 0, 255);"><span style="font-size: 14px; line-height: 22px;"><a href="http://www.cnblogs.com/BigPolarBear/p/3252678.html" target="_blank"><span style="color: rgb(0, 0, 255);">BigPolarBear的博客</span></a></span></span><span style="font-size: 14px; line-height: 22px;">&nbsp;、</span><a href="http://www.cnblogs.com/wupher/archive/2013/02/23/2923806.html" target="_blank"><span style="color: rgb(0, 0, 255);">杂技杂记</span></a> &nbsp;以及<a href="http://www.cocoachina.com/applenews/devnews/2013/0606/6352.html" target="_blank"><span style="color: rgb(0, 0, 255);">CC</span></a>此前<a href="http://www.cocoachina.com/applenews/devnews/2013/0607/6358.html" target="_blank"><span style="color: rgb(0, 0, 255);">整理</span></a>。</div>
+<div>&nbsp;</div>
+<div>古人云&ldquo;工欲善其事必先利其器&rdquo;，打造一个强大的开发环境，是立即提升自身战斗力的绝佳途径！以下是搜集的一些有力的XCode插件。</div>
+<div>&nbsp;</div>
+<div><strong>1.全能搜索家CodePilot 2.0</strong></div>
+<div>你要找的是文件？是文件夹？是代码？Never Mind，CMD+SHIFT+X调出CodePilot，输入任何你想到搜的东西吧！想搜appFinishLaunchingWithOptions？忘记咋拼了？没关系强大的代码搜索能力，appflaun一样也可以找到！超级强大的正则匹配，匹配任何你所想！</div>
+<div>项目地址：<span style="color: rgb(0, 0, 255);"><span style="font-size: 14px; line-height: 22px;"><a href="http://codepilot.cc" target="_blank">http://codepilot.cc</a></span></span></div>
+<div>&nbsp;</div>
+<div><strong>2.Vim控必备的XVim</strong></div>
+<div>
+<div>XVim是一个针对Xcode的Vim插件，能让开发者在不放弃任何xcode功能的前提下体验vim的功能。</div>
+</div>
+<div>项目地址：<span style="color: rgb(0, 0, 255);"><span style="font-size: 14px; line-height: 22px;"><a href="https://github.com/JugglerShu/XVim" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/JugglerShu/XVim</span></a></span></span></div>
+<div>
+<div>&nbsp;</div>
+<div><strong>3.YouCompleteMe（vim的插件）</strong></div>
+<div>如果你比较喜欢用vim来写代码的话，这里有一个非常棒的vim插件&mdash;&mdash;YouCompleteMe&mdash;&mdash;当你在编写OC代码时，可以提升体验。YouCompleteMe可以在Vim中添加代码自动补全功能，并且不需要你来按某个键来查看代码补全建议&mdash;&mdash;针对OC、OC++、C++以及C该插件可以自动补全建议。</div>
+<div>项目地址：<a href="https://github.com/Valloric/YouCompleteMe" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/Valloric/YouCompleteMe</span></a></div>
+<div>&nbsp;</div>
+<div style="text-align: center;"><img src="/cms/uploads/allimg/130918/4196_130918173916_1.gif" width="500" border="0" alt="" style="cursor:pointer" onclick="window.open('/cms/uploads/allimg/130918/4196_130918173916_1.gif')" /></div>
+</div>
+<div>&nbsp;</div>
+<div><strong>4.XCode颜色显示插件ColorSense</strong></div>
+<div>代码里的那些冷冰冰的颜色数值，到底时什么颜色？如果你经常遇到这个问题，每每不得不运行下模拟器去看看，那么这个插件绝对不容错过。更彪悍的是你甚至可以点击显示的颜色面板，直接通过系统的ColorPicker来自动生成对应颜色代码，再也不用做各种颜色代码转换了！</div>
+<div>项目地址： <a href="https://github.com/omz/ColorSense-for-Xcode" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/omz/ColorSense-for-Xcode</span></a></div>
+<div>&nbsp;</div>
+<div><strong>5.大段文本利器HOStringSense</strong></div>
+<div>经常输入大段文本的时候，如果文本里面有各种换行和特殊字符，经常会让人很头疼，有了HOStringSense，再也不不用为这个问题犯愁了，顺便附送字数统计功能。</div>
+<div>项目地址：<span style="color: rgb(0, 0, 255);"><span style="font-size: 14px; line-height: 22px;"><a href="https://github.com/holtwick/HOStringSense-for-Xcode" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/holtwick/HOStringSense-for-Xcode</span></a></span></span></div>
+<div>&nbsp;</div>
+<div><strong>6.规范注释生成器VVDocumenter</strong></div>
+<div>很多时候，为了快速开发，很多的技术文档都是能省则省，这个时候注释就变得异常重要，再配合Doxygen这种注释自动生成文档的，就完美了。但是每次都要手动输入规范化的注释，着实也麻烦，但有了VVDocumenter，规范化的注释，主需要输入三个斜线&ldquo;///&rdquo;，就OK啦！（VVDocumenter在Mac OSX 10.8.5和Xcode 4.6.3上进行开发，应该能支持所有Xcode 4版本，如果想支持Xcode 5，可以对plist文件稍作修改。</div>
+<div>项目地址：<a href="https://github.com/onevcat/VVDocumenter-Xcode" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/onevcat/VVDocumenter-Xcode</span></a></div>
+<div style="text-align: center;"><img src="/cms/uploads/allimg/130918/4196_130918173834_1.gif" width="480" border="0" height="286" alt="" style="cursor:pointer" onclick="window.open('/cms/uploads/allimg/130918/4196_130918173834_1.gif')" /></div>
+<div>&nbsp;</div>
+<div><strong>7.CocoaPods for Xcode</strong></div>
+<div>非常方便的Xcode pods插件。可以很方便的在Xcode通过pods安装各种objective-c第三方库，省去以前还要手动去跑pods命令行的麻烦；此外，还支持通过cocoaDocs来安装库文档。唯一的遗憾是，它目前只支持Xcode5，4版本还用不了。</div>
+<div>项目地址：<a href="https://github.com/kattrali/cocoapods-xcode-plugin" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/kattrali/cocoapods-xcode-plugin</span></a></div>
+<div>&nbsp;</div>
+<div><strong>8.Xcode语法高亮插件</strong></div>
+<div>以前用eclipse开发，自带的有语法高亮的效果。做ios开发也许久了，但是没发现一款语法高亮的插件，因为xcode自己的效果是仅在变量或类名下面加了个虚线，平时看起代码来十分不舒服，最近果断为xcode写了一款语法高亮的插件，不过功能非常有限，没有eclipse的那么好用，也没对对象的作用域区分，勉强能使用吧。和有需要的分享一下吧。</div>
+<div>下载附件，解压后放在：你的用户/Library/Application Support/Developer/Shared/Xcode/Plug-ins目录下，有的童鞋还没有Plug-ins这个目录吧，那就手动建一个，然后把解压后的highlight-Plugin.xcplugin放进去，重启xcode即可。然后就能看到高亮的菜单了。</div>
+<div>项目地址： <a href="http://www.cocoachina.com/bbs/read.php?tid=150107" target="_blank"><span style="color: rgb(0, 0, 255);">http://www.cocoachina.com/bbs/read.php?tid=150107</span></a></div>
+<div style="text-align: center;"><img src="/cms/uploads/allimg/130918/4196_130918173518_1.png" width="500" border="0" alt="" style="cursor:pointer" onclick="window.open('/cms/uploads/allimg/130918/4196_130918173518_1.png')" /></div>
+<div><strong>9.&nbsp;</strong><strong>KSImageNamed-Xcode</strong></div>
+<div>为项目中使用的UIImage的imageNamed提供文件名自动补全功能。使用[UIImage imageNamed:@&quot;xxx&quot;]时，该插件会扫描整个workspace中的图片文件。</div>
+<div>项目地址：&nbsp;<a href="https://github.com/ksuther/KSImageNamed-Xcode" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/ksuther/KSImageNamed-Xcode</span></a></div>
+<div style="text-align: center;"><img src="/cms/uploads/allimg/130918/4196_130918173554_1.png" width="458" border="0" height="215" alt="" style="cursor:pointer" onclick="window.open('/cms/uploads/allimg/130918/4196_130918173554_1.png')" /></div>
+<div><strong>10.xcode-extend-plug-in</strong></div>
+<div>帮助你快速格式化代码、生成注释、复制一行等。</div>
+<div>项目地址：&nbsp;<a href="https://code.google.com/p/xcode-extend-plug-in/" target="_blank"><span style="color: rgb(0, 0, 255);">https://code.google.com/p/xcode-extend-plug-in/</span></a></div>
+<div>&nbsp;</div>
+<div><strong>11.XcodeColors</strong></div>
+<div>改变调试控制台颜色&nbsp;</div>
+<div>项目地址： <a href="https://github.com/robbiehanson/XcodeColors" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/robbiehanson/XcodeColors</span></a></div>
+<div>&nbsp;</div>
+<div><strong>12.SCXcodeMiniMap</strong></div>
+<div>一个Xcode插件，可以在当前的窗口内创建一个代码迷你地图，并在屏幕上高亮提示。</div>
+<div>项目地址：&nbsp;<a href="https://github.com/stefanceriu/SCXcodeMiniMap" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/stefanceriu/SCXcodeMiniMap</span></a></div>
+<div style="text-align: center;"><img src="/cms/uploads/allimg/130918/4196_130918173645_1.png" width="500" border="0" alt="" style="cursor:pointer" onclick="window.open('/cms/uploads/allimg/130918/4196_130918173645_1.png')" /></div>
+<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: left;"><strong>13.Lin本地化字符串</strong></div>
+<div>之前我们提到过一个开源的Mac基础工具SCStringsUtility，可以让你在一个清爽的界面编辑不同的语言，简单地输入/输出NSLocalizedString数据。Lin是一款功能相近的Xcode插件，提供了一个非常不错的操作界面，并且为不同的语言提供了不同的区域。</div>
+<div>项目地址：<a href="https://github.com/questbeat/Lin " target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/questbeat/Lin&nbsp;</span></a></div>
+<div style="text-align: center;"><img src="/cms/uploads/allimg/130918/4196_130918173738_1.gif" width="500" border="0" alt="" style="cursor:pointer" onclick="window.open('/cms/uploads/allimg/130918/4196_130918173738_1.gif')" /></div>
+<div>&nbsp;</div>
+<div><strong>14.插件管理Alcatraz</strong></div>
+<div>Alcatraz是一个开源的Xcode 4包管理器，可以让你更便捷地发现、安装以及管理插件、模板和配色方案。只需要简单地点击或者勾选，不需要手工复制和粘贴。</div>
+<div>项目地址：&nbsp;<a href="https://github.com/mneorr/Alcatraz" target="_blank"><span style="color: rgb(0, 0, 255);">https://github.com/mneorr/Alcatraz</span></a></div>
+<div style="text-align: center;"><img src="/cms/uploads/allimg/130918/4196_130918173756_1.jpg" width="479" border="0" height="500" alt="" style="cursor:pointer" onclick="window.open('/cms/uploads/allimg/130918/4196_130918173756_1.jpg')" /></div>
+<p><strong>15.</strong><strong>FuzzyAutocompletePlugin--Xcode 5代码自动补全插件</strong></p>
+<div style="margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, STheiti, 微软雅黑, 黑体, Arial, Tahoma, sans-serif, serif; line-height: 25px;">FuzzyAutocompletePlugin是一个Xcode 5兼容的插件，通过添加模糊匹配来提高Xcode代码自动补全功能，开发者无需遵循从头匹配的原则，只要记得方法里某个关键字即可进行匹配，很好地提高了工作效率。</div>
+<div style="margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, STheiti, 微软雅黑, 黑体, Arial, Tahoma, sans-serif, serif; line-height: 25px;">注意：该插件只在Xcode 5上进行过测试，没有测试和其他插件之间的兼容性（KSImageNamed除外）。</div>
+<div style="margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, STheiti, 微软雅黑, 黑体, Arial, Tahoma, sans-serif, serif; line-height: 25px;">项目地址：https://github.com/chendo/FuzzyAutocompletePlugin</div>
+<div style="margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, STheiti, 微软雅黑, 黑体, Arial, Tahoma, sans-serif, serif; line-height: 25px;">附件：</div>
+<table width="450">
+    <tbody>
+        <tr>
+            <td height="30" width="20"><a href="/cms/uploads/soft/131031/4196-131031114408.zip" target="_blank"><img src="/cms/plus/img/addon.gif" border="0" align="center" alt="" /></a></td>
+            <td><a href="/cms/uploads/soft/131031/4196-131031114408.zip" target="_blank"><u>/cms/uploads/soft/131031/4196-131031114408.zip</u></a></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;"><img src="/cms/uploads/allimg/131031/4196_131031114351_1.gif" width="490" border="0" height="397" alt="" style="cursor:pointer" onclick="window.open('/cms/uploads/allimg/131031/4196_131031114351_1.gif')" /></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;"><strong>16.一个用来对齐常规代码的Xcode插件</strong><strong>--XAlign</strong></div>
+<div style="text-align: left;"><strong>一个用来对齐常规代码的Xcode插件</strong>，十分强大的自定义对齐模式。这里是一个对齐模式示例，模式文件在main/main/patterns.plist.</div>
+<div>详细信息可参看：http://github.so/XAlign/</div>
+<div>附件：</div>
+<table width="450">
+    <tbody>
+        <tr>
+            <td height="30" width="20"><a href="/cms/uploads/soft/131211/4196-131211113G3.zip" target="_blank"><img src="/cms/plus/img/addon.gif" border="0" align="center" alt="" /></a></td>
+            <td><a href="/cms/uploads/soft/131211/4196-131211113G3.zip" target="_blank"><u>/cms/uploads/soft/131211/4196-131211113G3.zip</u></a></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;"><img src="/cms/uploads/allimg/131211/4196_131211113618_1.gif" width="490" alt="" style="cursor:pointer" onclick="window.open('/cms/uploads/allimg/131211/4196_131211113618_1.gif')" /></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div></div>
+                            
+                            <div style="border-top:1px solid #ccc;margin-top:30px;line-height:1.8;padding-top:10px">
+                            	<p>CocoaChina是全球最大的苹果开发中文社区，官方微信每日定时推送各种精彩的研发教程资源和工具，介绍app推广营销经验，最新企业招聘和外包信息，以及Cocos2d引擎、Cocos Studio开发工具包的最新动态及培训信息。关注微信可以第一时间了解最新产品和服务动态，微信在手，天下我有！</p>
+                                <p style="margin-top:15px">请搜索微信号“CocoaChina”关注我们！</p>
+                                <p style="text-align:center"><img src="/cms/images/cocoachina_weixin.jpg" width="444" height="120" alt="搜索CocoaChina微信公众号：CocoaChina" /></p>
+                            </div>
+                            
+                            <div class="arc-opt">
+                            	
+                                <div class="fl"><a class="praise store fl" href="javascript:void(0)" onclick="add_favors(7022,'那些不能错过的Xcode插件')"></a></div><div id="newdigg" class="fl"><a href="javascript:void(0)" onclick="postDigg('good',7022)" class="praise fl" title="支持就要顶一下">(167)</a></div>
+								
+                          	</div>
+		<div class="clearfixed">
+        
+<div class="bdsharebuttonbox" data-tag="share_1">
+	<a class="bds_tsina" data-cmd="tsina"></a>
+	<a class="bds_tqq" data-cmd="tqq"></a>
+	<a class="bds_qzone" data-cmd="qzone"></a>
+	<a class="bds_weixin" data-cmd="weixin"></a>
+	<a class="bds_sqq" data-cmd="sqq"></a>
+	<a class="bds_bdhome" data-cmd="bdhome"></a>
+</div>
+<script>
+	window._bd_share_config = {
+		common : {
+			bdText : '那些不能错过的Xcode插件 - 来自CocoaChina苹果开发中文站@CocoaChina ',	
+			bdDesc : "古人云“工欲善其事必先利其器”，打造一个强大的开发环境，是立即提升自身战斗力的绝佳途径！以下是搜集的一些有力的XCode插件。",	
+			bdUrl : "http://www.cocoachina.com/industry/20130918/7022.html", 	
+			bdPic : 'http://www.cocoachina.com/cms/uploads/allimg/130918/4196-13091QH2360-L.jpg'
+		},
+		share : [{
+			"bdSize" : 32
+		}],
+		slide : [{	   
+			bdImg : 0,
+			bdPos : "right",
+			bdTop : 100
+		}],
+		image : [{
+			viewType : 'list',
+			viewPos : 'top',
+			viewColor : 'black',
+			viewSize : '24',
+			viewList : ['tsina','tqq','qzone','weixin','sqq']
+		}]
+	}
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+   </div>
+   
+   <!--bai fen dian-->
+   <div id="dt_Rec"></div>
+             <!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"cocoachina"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+                        </div>
+
+
+                    </div><!--detail-->
+                    
+                  
+
+
+            </div> <!--列表-->
+
+        </div>
+
+<div id="coco-store" style="display:none">
+	<div class="storebox">
+    	<h5>提示</h5>
+        <h3>已经收藏该篇文章</h3>
+        <p class="p1"><a href="/bbs/u.php?action=favor&tag=1">去我的收藏夹</a></p>
+        <p class="p2"><a href="/bbs/login.php">请登录</a></p>
+    </div>
+</div>        
+<script language="javascript" type="text/javascript" src="/cms/include/dedeajax2.js"></script>
+<script type="text/javascript">
+$(function() {
+	//getDigg(7022);
+})
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg'); 
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/cms/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+	DedeXHTTP = null;
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/cms/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+</script>
+<script type="text/javascript">
+	
+	var _channels = [];
+	$(function() {
+		var _host = window.location.host;
+		var _tempi = 0;
+		$("#channelinfos a").each(function() {
+			if( _tempi > 0 ) {
+				var _tempa = [];
+				_tempa.push($(this).html()+"");
+				_tempa.push("http://"+_host+$(this).attr("href"));
+				_channels.push(_tempa);
+			}
+			_tempi++;
+		})
+	})
+
+	
+	window["_BFD"] = window["_BFD"] || {};
+	_BFD.BFD_INFO = {
+	
+	
+		"title":"那些不能错过的Xcode插件",   //文章标题
+	
+		"id":"7022",   //文章id
+	
+		"url":"http://www.cocoachina.com/industry/20130918/7022.html",   //文章链接
+	
+		"category":_channels,   //文章类别
+	
+		"ptime":"1379496136",   //文章发表时间，时间戳格式
+	
+		"author":"suiling",   //文章作者
+			
+		"user_id":"0", //网站当前用户id，如果未登录就为0或空字符串
+		
+		"page_type":"detail", //当前页面全称，请勿修改
+		
+		"image_link":"http://www.cocoachina.com/cms/uploads/allimg/130918/4196-13091QH2360-L.jpg", //标题图片地址
+		
+		"description":"古人云“工欲善其事必先利其器”，打造一个强大的开发环境，是立即提升自身战斗力的绝佳途径！以下是搜集的一些有力的XCode插件。", // 内容简介
+		
+		"vcnt":"32939" //阅读人数
+	};
+</script>
+	</div>
+</div> <!--middle-->
+
+<div class="footer">
+	<div class="f-wrap clearfix">
+    	<div class="fl f-ls">
+        	<a href="/"><img src="/cms/templets/img_new/f-logo.png" width="200" height="72" alt="CocoaChina苹果开发中文站" /></a><br />
+            <a href="/cms/data/sitemap.html" class="fl-link" target="_blank">网站地图</a><br />
+            <a href="/aboutus/index.html" class="fl-link fl-l2" target="_blank">关于我们</a><br />
+            <a href="/contactus/index.html" class="fl-link fl-l2" target="_blank">联系我们</a><br />
+            <div>
+            	合作云平台: <a href="http://126.am/8XrTA0" target="_blank">又拍云</a><br />
+				京公网安备 11010502011183<br />
+                <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备 11006519号 　京ICP证 100954号</a><br />
+                Copyright &copy; 2008-2013 CocoaChina.com
+            </div>
+        </div>
+        
+        <div class="f-rs">
+        	<ul class="fr-list">
+            	<li>
+                	<h4><a href="/cms/all.php">资讯频道</a></h4>
+                    <a href="/game/" title="游戏开发" target="_blank"><span>游戏开发</span></a>
+					<a href="/appstore/" title="App Store研究" target="_blank"><span>App Store研究</span></a>
+					<a href="/ios/" title="iOS开发" target="_blank"><span>iOS开发</span></a>
+					<a href="/game/" title="游戏开发" target="_blank"><span>游戏开发</span></a>
+					<a href="/cocos/" title="Cocos引擎" target="_blank"><span>Cocos引擎</span></a>
+					<a href="/industry/" title="业界动态" target="_blank"><span>业界动态</span></a>
+					<a href="/design/" title="产品设计" target="_blank"><span>产品设计</span></a>
+					<a href="/programmer/" title="程序人生" target="_blank"><span>程序人生</span></a>
+                </li>
+                <li>
+                	<h4><a href="/bbs/">开发者论坛</a></h4>
+                    <a href="/bbs/" title="论坛" target="_blank"><span>论坛</span></a>
+					 <a href="/ask/" title="技术问答" target="_blank"><span>技术问答</span></a>
+					 <a href="http://d.cocoachina.com/" title="开发者中心" target="_blank"><span>开发者中心</span></a>
+					 <a href="http://code.cocoachina.com/" title="代码库" target="_blank"><span>代码库</span></a>
+					 <a href="http://tools.cocoachina.com/" title="工具库" target="_blank"><span>工具库</span></a>
+                </li>
+                <li>
+                	<h4><a href="http://open.cocoachina.com/">开发者平台</a></h4>
+                    <a href="http://open.cocoachina.com/" title="开发者平台" target="_blank"><span>开发者平台</span></a>
+					 <div>
+                    	<span>关注微信 每日推荐</span><br />
+                        <img src="/cms/templets/img_new/cocoachina-weixin-100.jpg" width="100" height="100" alt="关注CocoaChina微信 获取每日文章推荐" />
+                    </div>
+                </li>
+                <li class="last">
+                	<h4><a href="javascript:void(0)">关注我们</a></h4>
+                   
+                    <div>
+                    	<span>扫一扫 浏览移动版</span><br />
+                        <img src="/cms/templets/img_new/cocoachina-mobile-100.jpg" width="100" height="100" alt="扫一扫 浏览CocoaChina移动版" />
+                    </div>
+                </li>
+            </ul>
+            <div class="fr-fs">
+            	<h4>友情链接</h4>
+                <div class="clearfix"><ul><li><a href='http://cn.cocos2d-x.org/' target='_blank'>Cocos引擎中文官网</a> </li><li><a href='http://www.cocos2d-x.org/' target='_blank'>cocos2d-x</a> </li><li><a href='http://www.modian.com' target='_blank'>摩点众筹</a> </li><li><a href='http://xiuxiu.iphone.meitu.com/' target='_blank'>美图秀秀 iPhone 版</a> </li><li><a href='https://developer.apple.com/' target='_blank'>苹果开发者中心</a> </li><li><a href='http://www.sykong.com/' target='_blank'>手游那点事</a> </li><li><a href='http://leiphone.com/' target='_blank'>雷锋网</a> </li><li><a href='http://www.appshare.cn' target='_blank'>工程师爸爸</a> </li><li><a href='http://ipaddh.com' target='_blank'>iPad网址导航</a> </li><li><a href='http://www.maiyadi.com/' target='_blank'>麦芽地</a> </li><li><a href='http://www.nooidea.com/' target='_blank'>Nooidea.com | 装傻充愣</a> </li><li><a href='http://bbs.kenapple.com' target='_blank'>啃苹果论坛</a> </li><li><a href='http://www.mac52ipod.cn' target='_blank'>苹果fans</a> </li><li><a href='http://www.macfans.com.cn' target='_blank'>苹果发烧友</a> </li><li><a href='http://www.9ria.com/' target='_blank'>9RIA天地会</a> </li><li><a href='http://www.macfans.com.cn' target='_blank'>苹果发烧友</a> </li><li><a href='http://www.ityran.com/' target='_blank'>泰然网</a> </li><li><a href='http://www.eoe.cn/' target='_blank'>eoe开发者社区</a> </li><li><a href='http://hi.hiing.net' target='_blank'>维以不永伤</a> </li><li><a href='http://www.macidea.com/' target='_blank'>远景苹果主题</a> </li><li><a href='http://gamerboom.com/' target='_blank'>游戏邦</a> </li><li><a href='http://www.iapps.im/' target='_blank'>爱应用</a> </li><li><a href='http://www.woshipm.com/' target='_blank'>人人都是产品经理</a> </li><li><a href='http://www.9miao.com' target='_blank'>9秒社团</a> </li><li><a href='http://code.662p.com' target='_blank'>源码天堂</a> </li><li><a href='http://www.youxituoluo.com/' target='_blank'>游戏陀螺</a> </li><li><a href='http://www.tuicool.com/' target='_blank'>推酷网</a> </li><li><a href='http://segmentfault.com/' target='_blank'>SegmentFault</a> </li></ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="javascript:void(0);" id="back2top">顶部</a>
+
+<script language="javascript" src="/cms/bbsauth_new2013.php"  type="text/javascript"></script>
+<script src="/cms/templets/js_new/jquery.colorbox-min.js" type="text/javascript"></script>
+<script src="/cms/templets/js_new/script-min.js?t=20140307001" type="text/javascript"></script>
+<!--[if IE 6]>
+<script src="/cms/templets/js_new/DD_belatedPNG.js"></script>
+<script>
+  DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<script src='http://w.cnzz.com/c.php?id=30071575' language='JavaScript'></script>
+</body>
+</html>
