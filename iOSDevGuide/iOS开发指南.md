@@ -1,9 +1,11 @@
-#iOS开发指南.md
+iOS开发指南.md
+==============
 
-##Chapter4  UIView与视图
+Chapter4  UIView与视图
+---------------------
 
 ###1-1: 常规实现
-  
+
 * Storyboard
 * IB（Interface Build）实现
 * UILabel
@@ -14,7 +16,7 @@
 
 		resignFirstResponder
 	
-* UIScrollView
+* UIScrollView
 实现键盘出现时，如果虚拟键盘会遮挡输入控件，会自动向下滚动键盘高度的距离，如果不遮挡，这不会滚动。
 		
 		updateScorllView
@@ -53,7 +55,7 @@
 
 ---
   
-###1-6: UIWebView的替换控件： WKWebView
+###1-6: UIWebView的替换控件： WKWebView
       
 * 1.使用3种页面加载方法;
 
@@ -78,7 +80,7 @@
 
 ---
   
-###1-7: 消息框的两种表现形式 UIAlertController， 活动指示器和进度条 UIActivityIndicatorView、UIProgressView
+###1-7: 消息框的两种表现形式 UIAlertController， 活动指示器和进度条 UIActivityIndicatorView、UIProgressView
   
 * 1. UIAlertController可以分为警告框和操作表两种表现形式
 
