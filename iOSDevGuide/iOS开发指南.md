@@ -51,4 +51,26 @@ Chapter4  UIView与视图
           修改Info.plist
           添加App Transport Security Settings键，Add Row，添加Allow Arbitrary Load键，值为YES。
   
+  1-7: 消息框的两种表现形式 UIAlertController， 活动指示器和进度条 UIActivityIndicatorView、UIProgressView
+  
+      1. UIAlertController可以分为警告框和操作表两种表现形式
+          警告框： UIAlertControllerStyleAlert， 可以带TextFiled，
+              可以通过这样获取文本内容： alert.textFields.firstObject.text
+          操作表： UIAlertControllerStyleActionSheet， 不可以带TextField
+          都有三种按钮样式： UIAlertActionStyleDefault、UIAlertActionStyleCancel、UIAlertActionStyleDestructive
+          
+      2. 活动指示器：UIActivityIndicatorView
+          仅仅用于指示状态为 进行中或已停止
+          - 开启动画
+              [self.indicator startAnimating]
+          - 结束动画
+              [self.indicator stopAnimating]
+              
+      3. 进度条：UIProgressView
+          通过定时器控制进度变化：
+          - 创建定时器
+              self.timer = [NSTimer scheduledTimerWithTimeInterval:0.2 repeats:YES block:^(NSTimer * _Nonnull timer) {...}
+          - 终止定时器
+              [self.timer invalidate];
+  
   
