@@ -136,6 +136,61 @@ Chapter4  UIView与视图
         UINavigationItem: 导航栏项目，可分为左、中、右区域，中间是标题
         UIBarButtonItem: 与工具栏一样，是导航栏中的按钮
 
+---
+
+Chapter5 委托协议、数据协议与高级视图
+-------------------------------
+
+###5-2 选择器
+* 日期选择器
+* 普通选择器
+
+###5-3 集合视图
+* UIScrollView
+* UICollectionView
+    * UICollectionViewDelegate
+    * UICollectionViewDataSource
+    * UICollectionViewController
+        * UICollectViewCell
+* UICollectionViewLayout
+* UICollectionViewFlowLayout
+
+---
+
+Chapter6 表视图
+---------------------
+* UIScrollView
+* UITableView
+    * UITableViewDelegate
+    * UITableViewDataSource
+    * UITableViewController
+        * UITableViewCell
+    * UITableViewHeaderFooterView
+    
+---
+
+Chapter7 界面布局与屏幕适配
+-----------------------
+
+###7-1 界面布局
+UIStatusBar             20px
+UINavigationBar      44px
+
+UIView
+
+UIToolbar                 49px
+
+---
+
+###1-3 传统布局技术
+
+---
+
+###1-4 Auto Layout布局技术
+* Stack
+* Align
+* Pin (Add Constrains)
+* Resolve Auto Layout Issues
 
 
 
