@@ -119,4 +119,23 @@ Chapter4  UIView与视图
   
 ---
 
+###1-8:
+
+---
+
+###1-9: UIToolbar  和 UINavigationBar
+* UIToolbar
+
+        UIToolbar: 工具栏，通常位于屏幕底部
+        UIBarButtonItem: 工具栏中的按钮
+
+* UINavigationBar
+
+        UINavigationController: 导航控制器
+        UINavigationBar: 导航栏，与导航控制器是一对一的关系，通常位于屏幕顶部
+        UINavigationItem: 导航栏项目，可分为左、中、右区域，中间是标题
+        UIBarButtonItem: 与工具栏一样，是导航栏中的按钮
+
+
+
 
