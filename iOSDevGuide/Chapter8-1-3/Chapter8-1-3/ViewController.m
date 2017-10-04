@@ -28,6 +28,7 @@
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width*3, self.view.frame.size.height);
     self.scrollView.frame = self.view.frame;
     
+    // 所有的UIImageView共用一个ScrollView
     self.img1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"img1.png"]];
     self.img1.frame = self.view.frame;
     [self.scrollView addSubview:self.img1];
