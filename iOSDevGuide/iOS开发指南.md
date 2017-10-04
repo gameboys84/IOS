@@ -194,5 +194,53 @@ UIToolbar                 49px
 * Pin (Add Constrains)
 * Resolve Auto Layout Issues
 
+---
+
+Chapter8 视图控制器与导航模式
+-------------------------------------
+
+###8-1 视图控制器的种类
+
+* UIViewController
+* UINavigationController
+* UITabBarController
+* UIPageViewController
+* UISplitViewController
+* UIPopoverController
+
+###8-2 模态视图
+
+    - (void)presentViewController:(NSViewController *)viewController animator:(id<NSViewControllerPresentationAnimator>)animator;
+    - (void)dismissViewController:(NSViewController *)viewController;
+
+---
+
+###1-2 视图切换，显示和关闭
+
+* 发送消息
+
+        NSDictionary* dict = [NSDictionary dictionaryWithObject:self.txtUserName.text forKey:@"username"];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"RegisterDone" object:nil userInfo:dict];
+
+        [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"RegisterDone Close");
+        }];
+
+* 接收消息
+
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onRegisterDone:) name:@"RegisterDone" object:nil];
+
+        -(void)onRegisterDone:(NSNotification*)notify
+        {
+        NSDictionary* dict = [notify userInfo];
+        NSString* username = [dict objectForKey:@"username"];
+        NSLog(@"RegisterDone UserName:%@", username);
+
+        self.txtUserName.text = username;
+        }
+
+---
+
+### 1-3 平铺导航
 
 
