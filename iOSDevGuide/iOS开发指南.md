@@ -242,5 +242,8 @@ Chapter8 视图控制器与导航模式
 ---
 
 ### 1-3 平铺导航
+* 基于分屏导航的实现,主要控件：
+	* UIPageControl
+	* UIScrollView
 
 
