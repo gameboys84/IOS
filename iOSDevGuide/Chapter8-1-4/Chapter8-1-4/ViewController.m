@@ -51,7 +51,7 @@ bool isPageForword; // 向后翻页
     [self.pageViewCtrl setViewControllers:@[page1] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     [self.view addSubview:self.pageViewCtrl.view];
-    
+   
     self.pageCtrl.numberOfPages = self.viewCtrls.count;
     isPageForword = YES;
     pageIdx = 0;
@@ -95,9 +95,12 @@ bool isPageForword; // 向后翻页
     return self.viewCtrls[pageIdx];
 }
 
-// 在旋转时会报这2个错误 ：待查
+// 在屏幕旋转后，再翻页时会报这2个错误 ：待查
 // 1. Unbalanced calls to begin/end appearance transitions
 // 2. [App] if we're in the real pre-commit handler we can't actually add any new fences due to CA restriction
+
+// Delegate may specify a different spine location for after the interface orientation change. Only sent for transition style 'UIPageViewControllerTransitionStylePageCurl'.
+// Delegate may set new view controllers or update double-sided state within this method's implementation as well.
 -(UIPageViewControllerSpineLocation)pageViewController:(UIPageViewController *)pageViewController spineLocationForInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
     NSLog(@"ori:%d, page:%d", (int)orientation, pageIdx);
@@ -142,5 +145,26 @@ bool isPageForword; // 向后翻页
 {
     self.pageCtrl.currentPage = pageIdx;
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.pageViewCtrl beginAppearanceTransition:YES animated:animated];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self.pageViewCtrl endAppearanceTransition];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [self.pageViewCtrl beginAppearanceTransition:NO animated:animated];
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [self.pageViewCtrl endAppearanceTransition];
+}
+
 
 @end

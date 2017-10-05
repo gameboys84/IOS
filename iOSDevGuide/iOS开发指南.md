@@ -254,5 +254,12 @@ Chapter8 视图控制器与导航模式
 	* UIPageViewControllerDataSource 协议
 	* UIPageViewControllerDelegate 协议
 
+* 疑问？
+
+		// 在屏幕旋转后，再翻页时会报这2个错误 ：待查
+		// 1. Unbalanced calls to begin/end appearance transitions
+		// 2. [App] if we're in the real pre-commit handler we can't actually add any new fences due to CA restriction
+
 ---
+
 
