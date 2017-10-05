@@ -241,14 +241,18 @@ Chapter8 视图控制器与导航模式
 
 ---
 
-### 1-3 平铺导航
+### 8-3 平铺导航
+
+---
+
+### 1-3 滚屏效果
 * 基于分屏导航的实现，滚屏效果，主要控件：
 	* UIPageControl
 	* UIScrollView
 
 ---
 
-### 1-4 电子书导航
+### 1-4 电子书效果
 * 同样是分屏，电子书效果，主要控件：
 	* UIPageViewController 分页控制器
 	* UIPageViewControllerDataSource 协议
@@ -262,4 +266,31 @@ Chapter8 视图控制器与导航模式
 
 ---
 
+### 8-4 标签导航
+
+---
+
+### 8-5 树形结构导航
+
+---
+
+### 8-6 组合使用导航模式
+* 标签控制器场景
+* 一级视图控制器场景
+* 二级视图控制器场景
+* 模态视图控制器场景
+
+* TabBarController
+	* NavigationController(TabItem1)
+		* RootViewController
+			* TableView （一级视图）
+			* DetailView （二级视图） 
+
+		* NavigationController
+			* MainViewController
+				* ModalView （三级视图）
+	* NavigationController(TabItem2)
+	* NavigationController(TabItem3)
+
+---
 
