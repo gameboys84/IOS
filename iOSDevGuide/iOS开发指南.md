@@ -292,5 +292,47 @@ Chapter8 视图控制器与导航模式
 	* NavigationController(TabItem2)
 	* NavigationController(TabItem3)
 
+
+* 分别使用了UIWebView和WKWebView进行对比
+	* UIWebView  -  UIWebViewDelegate
+			
+			self.uiWebView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+			self.uiWebView.delegate = self;
+			[self.view addSubview:self.uiWebView];
+				
+			NSURL *url = [NSURL URLWithString:newUrl];
+			NSURLRequest *request = [NSURLRequest requestWithURL:url];
+			[self.uiWebView loadRequest:request];
+			
+			
+    
+	* WKWebView  -  WKNavigationDelegate
+
+			self.wkWebView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+			self.wkWebView.navigationDelegate = self;
+			[self.view addSubview:self.wkWebView];
+				
+			NSURL *url = [NSURL URLWithString:newUrl];
+			NSURLRequest *request = [NSURLRequest requestWithURL:url];
+			[self.wkWebView loadRequest:request];
+    
+* URL转义字符
+
+		NSString* urlPrefix;
+		NSString* urlPath;
+		// 需要先转义
+		if ([self.url hasPrefix:@"http://"])
+		{
+		    urlPrefix = @"http://";
+		}
+		else if ([self.url hasPrefix:@"https://"])
+		{
+		    urlPrefix = @"https://";
+		}
+		urlPath = [self.url substringFromIndex:[urlPrefix length]];
+		    
+		NSString* newUrl = [NSString stringWithFormat:@"%@%@", urlPrefix, [urlPath stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]]];
+		NSLog(@"open url:%@, \nnewUrl:%@", self.url, newUrl);
+
 ---
 
